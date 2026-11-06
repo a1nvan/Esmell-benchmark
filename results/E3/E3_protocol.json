@@ -1,0 +1,37 @@
+{
+  "dataset": "171,172 single-gas",
+  "channels": [
+    "R1",
+    "R2"
+  ],
+  "n_grid": 200,
+  "features": "E2 zero-filled 16 statistics per channel/block",
+  "resistance_clipping": "first pre-air segment across selected channels",
+  "masks": "phase-specific, hysteresis intersection",
+  "selected_on_validation": "weighted_hh",
+  "reference": "fixed_hh",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "tree_params": {
+    "n_estimators": 300,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "class_weight": "balanced"
+  },
+  "splits": {
+    "171": {
+      "train": 75,
+      "validation": 303,
+      "test": 257
+    },
+    "172": {
+      "train": 75,
+      "validation": 303,
+      "test": 257
+    }
+  },
+  "test_previously_inspected": true
+}

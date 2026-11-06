@@ -1,0 +1,58 @@
+{
+  "archives": {
+    "171": "curiosity-5v16.171.0.tar.gz",
+    "172": "curiosity-1v17.172.0.tar.gz"
+  },
+  "classes": [
+    "air",
+    "acetone",
+    "ammonia",
+    "benzene",
+    "isopropanol",
+    "pentane",
+    "toluene"
+  ],
+  "methods": [
+    "LogReg64",
+    "ExtraTrees64",
+    "ExtraTrees800",
+    "ROCKET",
+    "CNN_E2",
+    "ConvTran"
+  ],
+  "future_split": [
+    244,
+    134,
+    257
+  ],
+  "random_split_seeds": [
+    11,
+    22,
+    33
+  ],
+  "chrono_network_seeds": [
+    42,
+    43,
+    44
+  ],
+  "random_network_seed": 42,
+  "epochs_cap": 60,
+  "patience": 12,
+  "device": "cpu",
+  "versions": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.4.2",
+    "sklearn": "1.9.0"
+  },
+  "esdata_features_sha256": "a5c25d88b0bda750b18289e2a61b7e57454f84d99b2b23c15daf1b14befbaeef",
+  "archives_meta": {
+    "171": {
+      "bytes": 110015490,
+      "mtime_ns": 1793105890572949400
+    },
+    "172": {
+      "bytes": 110412114,
+      "mtime_ns": 1793105850720125600
+    }
+  }
+}

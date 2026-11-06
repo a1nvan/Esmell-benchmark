@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering\small
+\caption{Exploratory E5 diagnostics: fixed train/validation split on campaign 130 and previously examined campaign 146. Macro-8 is macro recall over all eight compositions; mixture exact is evaluated on true mixtures only. Means over seeds are not independent exposure-day replicates.}
+\label{tab:e5diag}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Val macro-8 & Val mix exact & Test macro-8 & Test mix exact & Test double & Test triple \\
+\midrule
+ExtraTrees3 & 25.8 & 14.4 & 18.6 & 14.3 & 28.6 & 0.0 \\
+ExtraTrees8 & 13.7 & 4.8 & 25.2 & 0.0 & 0.0 & 0.0 \\
+ROCKET & 22.0 & 8.0 & 18.5 & 25.9 & 25.9 & 25.9 \\
+CNN & 19.1 & 12.3 & 12.5 & 11.6 & 9.5 & 13.6 \\
+ConvTran & 21.9 & 9.6 & 14.3 & 18.4 & 15.0 & 21.8 \\
+AlwaysAll & 12.5 & 50.4 & 12.5 & 50.0 & 0.0 & 100.0 \\
+AlwaysAir & 12.5 & 0.0 & 12.5 & 0.0 & 0.0 & 0.0 \\
+TrainMode & 12.5 & 0.0 & 12.5 & 0.0 & 0.0 & 0.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

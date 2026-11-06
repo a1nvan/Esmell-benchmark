@@ -1,0 +1,10 @@
+model,gas,selection,val_balanced_log_mae,n_train
+Ridge,acetone,alpha=300.0,0.29803062404237135,693
+Ridge,isopropanol,alpha=300.0,0.22143226804626936,693
+Ridge,pentane,alpha=300.0,0.21832782289175212,692
+SVR,acetone,C=1.0,0.3724995932867653,693
+SVR,isopropanol,C=1.0,0.2680605459000977,693
+SVR,pentane,C=1.0,0.24335770858737207,692
+ExtraTrees,acetone,leaf=2,0.322395258422118,693
+ExtraTrees,isopropanol,leaf=8,0.2877884738714679,693
+ExtraTrees,pentane,leaf=8,0.24311304490956726,692

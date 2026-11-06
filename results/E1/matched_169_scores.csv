@@ -1,0 +1,4 @@
+model,n_test,bacc,pentane_recall,pentane_correct,pentane_total
+130 CNN,275,0.4607986526614369,0.0,0,97
+130 ExtraTrees,275,0.5217834507822542,0.0,0,97
+166 ExtraTrees,275,0.6478693564091563,0.5360824742268041,52,97

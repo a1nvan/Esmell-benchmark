@@ -1,0 +1,19 @@
+{
+  "model": "ExtraTrees (original multi_label_exp configuration)",
+  "seed": 42,
+  "trees": 160,
+  "leaf_size": 4,
+  "max_features": 0.85,
+  "no_presence_bits_as_features": true,
+  "no_output_clipping": true,
+  "cv": "GroupKFold(3) on 14 days of card 130, pooled out-of-fold macro-six",
+  "forward_training": "card 130 through 27 September; no validation refit",
+  "expected_archive_sha256": {
+    "130": "2144e940a10502de7010cd7a8b78219284bcc20deeb9bd07306c55678525065a",
+    "146": "9a77388eee58b0162814341461b4746ea6537cff4b6c2442af10be38bb8ebca1"
+  },
+  "cache_signature": "0f9b014163b167db7a0f2384d33f0f2a73e463353a1ffc7a60a6269eadc01b6f",
+  "sklearn_version": "1.8.0",
+  "observed_records": 3477,
+  "literature_status": "retrospective, not confirmatory"
+}

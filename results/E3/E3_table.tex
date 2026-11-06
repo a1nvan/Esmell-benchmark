@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering\small
+\caption{E3: fixed-model preprocessing ablations on campaigns 171 and 172.
+Balanced accuracy (\%, mean over three ExtraTrees seeds) on chronological splits.
+All variants use the same legacy resistance clipping and phase masks.}
+\label{tab:e3_ablation}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Representation & 171 val & 171 test & 172 val & 172 test \\
+\midrule
+Conductance (heat) & 17.0 & 21.2 & 34.1 & 40.7 \\
+Log conductance (heat) & 22.4 & 22.3 & 31.5 & 45.4 \\
+Pre-air (heat) & 37.3 & 43.6 & 61.3 & 72.1 \\
+Fixed bracket (heat) & 55.6 & 60.4 & 56.0 & 71.5 \\
+Weighted bracket (heat) & 54.7 & 61.1 & 57.0 & 74.8 \\
+Weighted bracket (cool) & 44.2 & 53.1 & 57.5 & 68.3 \\
+Weighted (heat{+}cool) & 51.7 & 63.3 & 59.2 & 77.3 \\
+Weighted (heat{+}hyst.) & 57.5 & 66.0 & 65.3 & 79.1 \\
+\textbf{Fixed (heat{+}hyst.)} & 57.1 & 63.9 & 65.3 & 79.1 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\parbox{0.98\textwidth}{\footnotesize The 20 October validation set is
+used for representation selection, and 21 October for descriptive testing.
+For fixed bracket heat+hysteresis, the input tensor reproduces the
+\texttt{CanonicalSubtractionFeatures} pipeline used in E2.}
+\end{table*}

@@ -1,0 +1,8 @@
+class,train,validation,test
+air,8,48,44
+acetone,13,45,37
+ammonia,9,34,32
+benzene,9,48,33
+isopropanol,12,36,33
+pentane,7,56,33
+toluene,17,36,45

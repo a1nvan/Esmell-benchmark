@@ -1,0 +1,2 @@
+control,split,n,n_mix,macro8,exact_all,exact_mix,exact_double,exact_triple,pred_mix_rate,macro_bacc,macro_f1
+permuted_train_labels_ET3,validation,152,125,0.125,0.02631578947368421,0.0,0.0,0.0,0.0,0.5,0.0

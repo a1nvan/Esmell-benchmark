@@ -1,0 +1,21 @@
+{
+  "selected": "weighted_hh",
+  "criterion": "maximum mean validation BAcc",
+  "ranking": {
+    "weighted_hh": 0.6138547085500866,
+    "fixed_hh": 0.6121943221733137,
+    "weighted_h": 0.5584975656929438,
+    "fixed_h": 0.5578481392557023,
+    "weighted_hc": 0.554641023075897,
+    "weighted_c": 0.5084656084656084,
+    "pre_h": 0.4930552776666222,
+    "L_h": 0.269577831132453,
+    "G_h": 0.2554346738695478
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "test_previously_inspected": true
+}

@@ -1,0 +1,28 @@
+\paragraph{Protocol.} We study preprocessing ablations for seven-class gas identity
+classification on two sensor chips (171 and 172) with common channels R1/R2.
+Each variant uses the same resistance clipping, 200-point canonical temperature grid,
+phase-specific validity masks, zero fill outside each output block mask, and
+the same 16 statistical features per sensor-response block as the E2 tree baseline.
+The reference input (fixed-weight heating and hysteresis) numerically matches
+\texttt{CanonicalSubtractionFeatures}. Hyperparameters and chronological splits
+are held fixed; 20 October is used for validation and 21 October for testing.
+All means are over three ExtraTrees random seeds (not independent days).
+Results are listed in Table~\ref{tab:e3_ablation}.
+
+\paragraph{Results.} Relative to unreferenced log-conductance, pre-air
+referencing changes test balanced accuracy by +21.2 and +26.7
+percentage points (171 and 172). Adding the second air reference at equal
+weight changes it by +16.8 and -0.7 points.
+Compared with fixed weights, time interpolation for the heat+hysteresis
+representation changes it by +2.2 and -0.0 points.
+Using heat plus hysteresis rather than heat plus cooling changes it
+by +2.7 and +1.8 points.
+
+\paragraph{Interpretation.} The observed effects of air referencing and
+the second air measurement are device- and protocol-dependent.
+Any gain from the heat+hysteresis parameterization is a representation
+effect for the evaluated ExtraTrees model, not new physical information.
+Time-weighted and equal-weight air referencing are compared as alternatives
+without assuming either must outperform the other.
+The test day was inspected in prior exploratory analyses, so these results
+are descriptive and do not establish device-independent optimality.

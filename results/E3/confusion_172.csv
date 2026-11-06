@@ -1,0 +1,8 @@
+,air,acetone,ammonia,benzene,isopropanol,pentane,toluene
+air,44,0,0,0,0,0,0
+acetone,0,23,11,0,1,0,2
+ammonia,0,2,27,0,1,0,2
+benzene,0,0,0,33,0,0,0
+isopropanol,0,1,1,0,18,0,13
+pentane,1,0,0,0,0,32,0
+toluene,0,2,1,1,16,0,25

@@ -1,0 +1,55 @@
+{
+  "archives": {
+    "130": "curiosity-2v15.130.0.tar.gz",
+    "146": "curiosity-2v15.146.0.tar.gz"
+  },
+  "cache_signature": "0f9b014163b167db7a0f2384d33f0f2a73e463353a1ffc7a60a6269eadc01b6f",
+  "channels": [
+    "R1",
+    "R2",
+    "R11",
+    "R12",
+    "R16",
+    "R17"
+  ],
+  "gases": [
+    "acetone",
+    "isopropanol",
+    "pentane"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "methods": [
+    "ExtraTrees3",
+    "ExtraTrees8",
+    "ROCKET",
+    "CNN",
+    "ConvTran"
+  ],
+  "baselines": [
+    "AlwaysAir",
+    "AlwaysAll",
+    "TrainMode"
+  ],
+  "weighting": "balanced 8 compositions, full inverse training counts",
+  "validation_selection": "macro-recipe BCE; no test in checkpoint or thresholds",
+  "threshold_main": "joint macro-8 recall, tie mixture exact on validation",
+  "primary_metrics": [
+    "macro8",
+    "exact_mix",
+    "exact_double",
+    "exact_triple"
+  ],
+  "preregistration": "exploratory AFTER inspection of original E5 test",
+  "neural_epochs": 70,
+  "patience": 12,
+  "same_day": true,
+  "memorization": true,
+  "weight_ablation": true,
+  "sklearn": "1.9.0",
+  "torch": "2.10.0+cpu",
+  "device": "cpu"
+}

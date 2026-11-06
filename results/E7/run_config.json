@@ -1,0 +1,50 @@
+{
+  "task": "E7 non-oracle joint quantification",
+  "complete": true,
+  "train_records": 2338,
+  "validation_records": 71,
+  "within130_records": 152,
+  "future146_records": 916,
+  "validation": "Six frozen Sep27 hourly blocks from StratifiedGroupKFold(4) fold 0 (sklearn 1.8)",
+  "validation_hours": [
+    "2026-09-27T03:00",
+    "2026-09-27T05:00",
+    "2026-09-27T08:00",
+    "2026-09-27T18:00",
+    "2026-09-27T21:00",
+    "2026-09-27T23:00"
+  ],
+  "model_order": [
+    "AlwaysAir",
+    "TrainMode",
+    "AlwaysAll",
+    "ExtraTrees3+Median",
+    "ExtraTrees3+ExtraTreesReg",
+    "ROCKET+Median",
+    "ROCKET+ExtraTreesReg",
+    "CNN_presence_only+Median",
+    "CNN_joint+Median",
+    "CNN_joint+RegHead"
+  ],
+  "gases": [
+    "acetone",
+    "isopropanol",
+    "pentane"
+  ],
+  "train_only_ppb_scale": [
+    5240.0,
+    325.0,
+    7000.0
+  ],
+  "neural_seeds": [
+    42,
+    43,
+    44
+  ],
+  "lambda_reg": 0.5,
+  "selection": "grouped Sep27 val macro-composition BCE; global threshold val macro8",
+  "primary": "macro8 normalized ppb MAE",
+  "cache_signature": "0f9b014163b167db7a0f2384d33f0f2a73e463353a1ffc7a60a6269eadc01b6f",
+  "no_oracle_at_inference": true,
+  "test_previously_inspected": true
+}
